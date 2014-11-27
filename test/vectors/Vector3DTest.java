@@ -121,14 +121,14 @@ public class Vector3DTest {
      */
     @Test
     public void testEquals() {
-        //Check when condition should be true
+        //Check when result should be true
         Object anotherObject = new Vector3D(2,4,5);
         Vector3D instance = new Vector3D(2,4,5);
         boolean expResult = true;
         boolean result = instance.equals(anotherObject);
         assertEquals(expResult, result);
         
-        //Check when condition should be false but object type is the same
+        //Check when result should be false but object type is the same
         anotherObject = new Vector3D(2,4,6);
         expResult=false;
         result = instance.equals(anotherObject);

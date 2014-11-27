@@ -46,7 +46,7 @@ public class Vector2DTest {
         Vector2D instance = new Vector2D(5,2);
         double expResult = 5.38516480713;
         double result = instance.length();
-        assertEquals(expResult, result, 0.1);
+        assertEquals(expResult, result, 0.001);
     }
 
     /**
@@ -107,14 +107,14 @@ public class Vector2DTest {
     @Test
     public void testEquals() {
         System.out.println("equals");
-        //Check when condition should be true
+        //Check when result should be true
         Object anotherObject = new Vector2D(2,4);
         Vector2D instance = new Vector2D(2,4);
         boolean expResult = true;
         boolean result = instance.equals(anotherObject);
         assertEquals(expResult, result);
         
-        //Check when condition should be false but object type is the same
+        //Check when result should be false but object type is the same
         anotherObject = new Vector2D(3,5);
         expResult=false;
         result = instance.equals(anotherObject);
